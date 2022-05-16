@@ -1,0 +1,61 @@
+/* colors */
+:root {
+  --background: #ffe9c5;
+  --background-inverse: #eb6383;
+  --text: #24292f;
+  --text-inverse: #ffffff;
+}
+
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.4rem;
+  line-height: 22px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.center-wrapper {
+  padding: 0 10px;
+}
+
+.center-wrapper > * {
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+/* menu */
+
+.menu {
+  margin: 0;
+  padding-left: 0;
+}
+
+.menu.inline li {
+  display: inline;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu li > a {
+  text-decoration: none;
+}
+
+.menu li > a:hover {
+  text-decoration: underline solid;
+}
+
+.menu li > a:visited {
+  color: inherit;
+}

@@ -1,0 +1,52 @@
+.header-wrapper {
+  background: var(--background);
+}
+
+header {
+  min-height: 200px;
+  color: var(--text);
+  padding: 10px 0;
+  display: flex;
+}
+
+.company {
+  flex-grow: 1;
+}
+
+.company > .name {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.phone-numbers > * {
+  font-stretch: ultra-condensed;
+  font-weight: 300;
+  font-size: 3.5rem;
+  line-height: 40px;
+}
+
+.main-nav-wrapper {
+  background: var(--background-inverse);
+}
+
+nav.main {
+  color: var(--text-inverse);
+  font-size: 2.1rem;
+}
+
+nav.main ul {
+  margin: 0;
+  text-align: center;
+  padding: 15px 0;
+}
+
+nav.main li + li::before {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 2.1rem;
+  transform: translateY(3px);
+  background-color: var(--text-inverse);
+  margin: 0 10px;
+}

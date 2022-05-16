@@ -1,0 +1,15 @@
+.footer-wrapper {
+  background: var(--background-inverse);
+}
+
+footer {
+  margin-top: auto;
+  min-height: 200px;
+  padding: 30px 0 10px;
+  color: var(--text-inverse);
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  justify-content: space-between;
+  gap: 10px;
+}
