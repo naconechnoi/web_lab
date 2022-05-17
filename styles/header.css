@@ -3,20 +3,42 @@
 }
 
 header {
-  min-height: 200px;
+  min-height: 150px;
   color: var(--text);
   padding: 10px 0;
   display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+    width: min-content;
+  }
 }
 
 .company {
-  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.company > .name {
+.company .name {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 10px;
+}
+
+.company .slogan {
+  font-size: 1.8rem;
+}
+
+.phone-numbers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  white-space: nowrap;
 }
 
 .phone-numbers > * {
@@ -49,4 +71,20 @@ nav.main li + li::before {
   transform: translateY(3px);
   background-color: var(--text-inverse);
   margin: 0 10px;
+}
+
+.cover {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+
+.cover > * {
+  min-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

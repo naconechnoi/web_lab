@@ -33,6 +33,10 @@ body {
   max-width: 980px;
 }
 
+a.current {
+  font-weight: bold;
+}
+
 /* menu */
 
 .menu {
@@ -50,12 +54,9 @@ body {
 
 .menu li > a {
   text-decoration: none;
+  color: inherit;
 }
 
 .menu li > a:hover {
-  text-decoration: underline solid;
-}
-
-.menu li > a:visited {
-  color: inherit;
+  text-decoration: underline;
 }

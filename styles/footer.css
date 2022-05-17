@@ -8,8 +8,24 @@ footer {
   padding: 30px 0 10px;
   color: var(--text-inverse);
   box-sizing: border-box;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, 200px);
+  display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 10px;
+}
+
+footer .menu li > a {
+  text-decoration: underline;
+}
+
+footer a:hover {
+  font-style: italic;
+}
+
+.developer img {
+  float: left;
+}
+
+.developer a {
+  color: inherit;
 }
