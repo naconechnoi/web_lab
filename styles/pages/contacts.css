@@ -1,0 +1,9 @@
+main {
+  padding: 20px 0;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
